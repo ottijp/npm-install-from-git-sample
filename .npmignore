@@ -1,0 +1,3 @@
+# DO NOT exclude src/ for installation from git
+# src/
+node_modules

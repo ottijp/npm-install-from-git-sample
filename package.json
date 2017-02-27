@@ -1,0 +1,30 @@
+{
+  "name": "npm-install-from-git-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/cat.js",
+  "scripts": {
+    "build": "babel --presets es2015 -d lib src",
+    "postinstall": "postinstall-build lib \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ottijp/npm-install-from-git-sample.git"
+  },
+  "author": "Satoshi SAKAO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ottijp/npm-install-from-git-sample/issues"
+  },
+  "homepage": "https://github.com/ottijp/npm-install-from-git-sample#readme",
+  "dependencies": {
+    "postinstall-build": "^2.1.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0"
+  },
+  "bin": {
+    "npm-install-from-git-sample": "./bin/npm-install-from-git-sample"
+  }
+}
